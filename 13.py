@@ -2,7 +2,7 @@ def closest_to_sum(arr):
     arr.sort()
     left=0
     right=len(arr)-1
-    closest_sum=float('inf')
+    closest_sum=float('inf') 
     while left<right:
         current_sum=arr[left]+arr[right]
         if abs(current_sum)<abs(closest_sum):
@@ -13,4 +13,4 @@ def closest_to_sum(arr):
             right-=1
     return closest_sum
 arr=[1,5,-2,3,-1,7,-4]
-print(closest_to_zero)
+print(closest_to_sum)
